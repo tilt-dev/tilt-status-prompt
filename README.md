@@ -8,7 +8,7 @@ Adds your Tilt resource status to your bash prompt, e.g.:
 Put tilt-status-prompt.sh somewhere on your machine, e.g.:
 ```
 mkdir -p ~/bin
-curl github.com/tilt-dev/tilt-status-prompt/tilt-status-prompt.sh > ~/bin/tilt-status-prompt.sh
+curl https://raw.githubusercontent.com/tilt-dev/tilt-status-prompt/main/tilt-status-prompt.sh > ~/bin/tilt-status-prompt.sh
 ```
 
 `source` it in your ~/.bashrc, e.g.:

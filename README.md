@@ -1,3 +1,8 @@
+# Description
+
+Adds your Tilt resource status to your bash prompt, e.g.:
+![Screenshot](screenshot.png)
+
 # Usage
 
 Put tilt-status-prompt.sh somewhere on your machine, e.g.:

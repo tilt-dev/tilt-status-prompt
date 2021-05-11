@@ -20,3 +20,5 @@ change .bashrc to use `tilt_ps1` in your `$PS1`, e.g.:
 ```
 export PS1='[\t $(__tilt_ps1)\$ '
 ```
+
+Tilt status will now show up in your prompt any new shells. To get it to show up in an existing shell, run `source ~/.bashrc`.

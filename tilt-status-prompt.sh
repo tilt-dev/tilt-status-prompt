@@ -11,7 +11,10 @@ __tilt_ps1()
     die "error: jq not on path"
   fi
   
-  STATUS_JSON="$(tilt get session -ojson)"
+  STATUS_JSON="$(tilt get session -ojson 2> /dev/null)"
+  if [[ $? != 0 ]]; then
+    exit 0
+  fi
   
   # echo "$STATUS_JSON" | jq -C '.'
   RESOURCE_STATUSES="$(echo "$STATUS_JSON" | jq -r '.items[].status.targets[] | "\(.name) \(.type) \(.state | keys[0]) \(.state.terminated | has("error")) \(.state.active.ready)"')"
